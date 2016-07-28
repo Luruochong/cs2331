@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void main(){
+int main(){
 
     char choice123;
     char choicewh;

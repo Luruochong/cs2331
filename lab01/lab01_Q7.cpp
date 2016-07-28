@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-void main(){
+int main(){
     int n;
     cout << "Input the number of credit units of this course: ";
     cin >> n;
-    cout << "In the semester, you need to study approximately";
+    cout << "In the semester, you need to study approximately ";
     cout << 40 * n;
     cout << " to ";
     cout << 50 * n;
