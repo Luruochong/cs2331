@@ -1,14 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int isLeapYear(int year){
-    if (year % 4 == 0){
-        cout << year << " is a leap year." << endl;
-    }
+bool isLeapYear(int year){
+    if (year % 4 == 0) 
+        return true;
     else 
-        cout << year << " is a common year." << endl;
-
-    return 0;
+        return false;
 }
 
 int main(){
@@ -17,7 +14,10 @@ int main(){
     while (conti != 'n'){
         cout << "Input a year: ";
         cin >> year;
-        isLeapYear(year);
+        if (isLeapYear(year))
+            cout << year << " is a leap year." << endl;
+        else 
+            cout << year << " is a common year." << endl;
         cout << "Continue? Your choice[y/n]: ";
         cin >> conti;
     }
