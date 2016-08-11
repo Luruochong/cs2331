@@ -17,7 +17,7 @@ int main(){
             else s2 = s;
             cout << s1 << " " << s2 << " " << s3 << endl;
         }
-        if (s2 + s3 < s1 || s1 - s2 > s3){
+        if (s2 + s3 <= s1 ){
             cout << "Impossible" << endl;
         }
         else {

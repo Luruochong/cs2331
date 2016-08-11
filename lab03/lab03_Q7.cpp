@@ -29,7 +29,7 @@ int main(){
     cin >> hex1 >> hex2;
     if (isHexDigit(hex1, hex2))
         cout << "You entered: " << hex1 << hex2 << endl << "First digit: " << hex1 << " means " << hex2dec(hex1) << endl << "Second digit: " << hex2 << " means " << hex2dec(hex2) << endl << "In decimal, it is: " << hex2dec(hex1) * 16 + hex2dec(hex2) << endl;
-    else cout << "Invalid number.";
+    else cout << "Invalid number." << endl;
     return 0;
 }
 
