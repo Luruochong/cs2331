@@ -9,11 +9,9 @@ bool isOdd(int num){
 }
 
 int leftMostDigit(int num1){
-    if (num1 > 10){
-        do {
-            num1 = num1 / 10;
-        } while (num1 > 10);
-    }
+    while (num1 >= 10){
+        num1 = num1 / 10;
+    } 
     return num1;
 }
 
@@ -27,15 +25,16 @@ int displayDigitsReversed(int num2){
     return 0;
 }
 
-bool getIntSqRoot(int num3, int sqRoot){
-    for (int i = 0; i < num3; i++){
-        if (num3 / i == i){
+bool getIntSqRoot(int num3, int &sqRoot){
+    sqRoot = 0;
+    for (int i = 1; i < num3; i++){
+        if (num3 / i == i)
             sqRoot = i;
-            return true;
-        }
-        else
-            return false;
     }
+    if (sqRoot != 0)
+        return true;
+    else
+        return false;
 }
   
 int main(){     
