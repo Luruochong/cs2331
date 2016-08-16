@@ -9,22 +9,20 @@ bool isOdd(int num){
 }
 
 int leftMostDigit(int num1){
-    int i = 0;
+    char a;
     do {
         num1 = num1 / 10;
-        cout << num1;
-        i++;
-    } while (i < 5);
+    } while (num1 > 10);
     return num1;
 }
 
 int displayDigitsReversed(int num2){
     int rem;
-    do{
+    while (num2 != 0){
         rem = num2 % 10;
         cout << rem << " ";
         num2 = num2 / 10;
-    } while (num2 < 10);
+    } 
     return 0;
 }
 
