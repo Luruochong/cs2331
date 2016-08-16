@@ -9,9 +9,12 @@ bool isOdd(int num){
 }
 
 int leftMostDigit(int num1){
-    do{
+    int i = 0;
+    do {
         num1 = num1 / 10;
-    } while (num1 < 10);
+        cout << num1;
+        i++;
+    } while (i < 5);
     return num1;
 }
 
