@@ -9,10 +9,11 @@ bool isOdd(int num){
 }
 
 int leftMostDigit(int num1){
-    char a;
-    do {
-        num1 = num1 / 10;
-    } while (num1 > 10);
+    if (num1 > 10){
+        do {
+            num1 = num1 / 10;
+        } while (num1 > 10);
+    }
     return num1;
 }
 
